@@ -15,7 +15,7 @@ function converter() {
             return;
         }else{
             const resultsValue = valor * data.conversion_rates[select_typeToChange.value]
-            result.innerHTML = valor + select_actualType.value + " = " + resultsValue + select_typeToChange.value;
+            result.innerHTML = valor + select_actualType.value + " = " + resultsValue.toFixed(3) + select_typeToChange.value;
         }
         
     })

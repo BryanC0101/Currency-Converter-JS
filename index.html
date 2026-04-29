@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <section class="container">
+        <div class="titleImage">
+            <img src="currency-conversion.svg" alt="">
+            <h1>CURRENCY CONVERTER</h1>
+        </div>
+        <div class="amountBox">
+            <p>Amount:</p>
+            <input type="text" placeholder="64" id="digitArea">
+        </div>
+        <div class="switchType">
+            <select id="actualType">
+                <option>BRL</option>
+                <option>USD</option>
+                <option>EUR</option>
+                <option>GBP</option>
+                <option>JPY</option>
+                <option>CAD</option>
+                <option>AUD</option>
+                <option>CHF</option>
+                <option>CNY</option>
+                <option>ARS</option>
+                <option>MXN</option>
+            </select>
+            <select id="typeToChange">
+                <option>BRL</option>
+                <option>USD</option>
+                <option>EUR</option>
+                <option>GBP</option>
+                <option>JPY</option>
+                <option>CAD</option>
+                <option>AUD</option>
+                <option>CHF</option>
+                <option>CNY</option>
+                <option>ARS</option>
+                <option>MXN</option>
+            </select>
+        </div>
+        <button id="convertBtn" onclick="converter()">Convert</button>
+        <div id="result"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
